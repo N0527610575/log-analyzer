@@ -12,7 +12,7 @@ def main():
     log_data = reader_log(log_file)
     print(f"מספר השורות{len(log_file)}")
 
-    print(f"מספר השורות עם פורטים תקינים{len(safe_port(log_data))}")
+    print(f"מספר השורות עם פורטים חשודים{len(safe_port(log_data))}")
 
     tag_row = tag_sizes(log_data)
 
