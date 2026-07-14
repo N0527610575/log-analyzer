@@ -19,6 +19,4 @@ def dict_port(log_data):
     return port_protocol
 
 
-def analyz_row(log_data):
-
 
