@@ -23,9 +23,9 @@ def main():
     tag_name = [(tag, row) for tag , row in tag_row]
     print(tag_name[:3])
 
-    # for k , v in analyze_logs_to_dict(log_data).items():
-    #     if len(v) >= 2:
-    #         print(k,v)
+    for k , v in analyze_logs_to_dict(log_data).items():
+        if len(v) >= 2:
+            print(k,v)
     print(len(analyze_logs_to_dict(log_data)))
     reporter(log_data,"report.txt",analyze_logs_to_dict(log_data))
 
